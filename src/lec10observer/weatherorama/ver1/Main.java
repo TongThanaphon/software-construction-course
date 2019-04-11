@@ -9,10 +9,14 @@ public class Main {
         // observers
         CurrentConditionDisplay currentConditionDisplay = new CurrentConditionDisplay();
         StatisticsDisplay statisticsDisplay = new StatisticsDisplay();
+        HumidityAverageDisplay humaidityAverageDisplay = new HumidityAverageDisplay();
+        ForecastDisplay forecastDispaly = new ForecastDisplay();
 
         // connect subject and observers
         data.registerObserver(currentConditionDisplay);
         data.registerObserver(statisticsDisplay);
+        data.registerObserver(humaidityAverageDisplay);
+        data.registerObserver(forecastDispaly);
 
         // input receives new data from a user via System.in
         // whenever a user inputs new data, all observers are

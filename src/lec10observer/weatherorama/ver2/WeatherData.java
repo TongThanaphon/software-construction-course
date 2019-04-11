@@ -8,6 +8,7 @@ public class WeatherData extends Subject {
     private double temperature;
     private double humidity;
     private double pressure;
+    private double waveheight;
 
     public double getTemperature() {
         return temperature;
